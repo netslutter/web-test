@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style> 
+ 
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">H4CKERsPUNK</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hey there Geeks<br>Its me @<span class="home__title-color">Punker-Bhai</span><br>Cyber Security &<br> Ethical Hacking</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://instagram.com/hackerspunk" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://t.me/hackerspunk" class="home__social-icon"><i class='bx bxl-telegram' ></i></a>
+                    <a href="https://github.com/Punker-Bhai" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="img/home.png" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm Punker-Bhai</h2>
+                        <p class="about__text">Also known as H4CKERsPUNK, Programmer, Cybern Security Ethical Hacker, InfoSec Awareness and CyberSec<br>Learner as well as learning</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+                    <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form"
+                    ></form>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="button" value="Enter" class="contact__button button">
+      </form>
+    </div>
+  </div>
+</div>
+    </section>
+        </main>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">H4CKERsPUNK</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram-alt ' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-telegram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p>Special thanks to abhacker and technocyber</p>
+            <a href="#" class="footer__icon"><i class='bx bxl-android' ></i></a>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="lib/main.js"></script>
+    </body>
+</html>
